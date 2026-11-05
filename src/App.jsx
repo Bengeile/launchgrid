@@ -513,7 +513,7 @@ export default function App() {
                   </div>
 
                   <div className="flex items-center justify-between w-full">
-                    <div className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center p-2 shadow-inner border border-white/20 overflow-hidden">
+                    <div className="w-16 h-16 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center p-1 shadow-inner border border-white/20 overflow-hidden">
                       {faviconSrc && !isFaviconFailed ? (
                         <img 
                           src={faviconSrc} 
@@ -524,7 +524,7 @@ export default function App() {
                           }}
                         />
                       ) : (
-                        <span className="font-bold text-white text-lg">{tile.title.charAt(0).toUpperCase()}</span>
+                        <span className="font-bold text-white text-3xl">{tile.title.charAt(0).toUpperCase()}</span>
                       )}
                     </div>
                     <div className="opacity-0 group-hover:opacity-60 text-white cursor-grab">
